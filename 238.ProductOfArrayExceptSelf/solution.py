@@ -4,18 +4,31 @@ def productExceptSelf(nums):
   :type nums: List[int]
   :rtype: List[int]
   """
-  answer = nums
-  print(answer)
-  count = 0
-  product = 1
-  
-  
+  output = [1] * len(nums)
+  left = 1
   for i in range(len(nums)):
-    if (count != i): # 0 != 0 
-      product *= nums[i]
-      answer[count] = product
-      count += 1
-  return answer
+    output[i] *= left
+    left *= nums[i]
+        
+  right = 1
+  for i in range(len(nums) - 1, -1, -1):
+    output[i] *= right
+    right *= nums[i]
+    
+  return output   
+  
+  # answer = nums
+  # print(answer)
+  # count = 0
+  # product = 1
+  
+  
+  # for i in range(len(nums)):
+  #   if (count != i): # 0 != 0 
+  #     product *= nums[i]
+  #     answer[count] = product
+  #     count += 1
+  # return answer
 
   #answer = []
   #for i in range(len(nums)):
