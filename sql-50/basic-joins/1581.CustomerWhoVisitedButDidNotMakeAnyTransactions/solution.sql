@@ -1,6 +1,6 @@
 SELECT customer_id, COUNT(visit_id) AS count_no_trans
 -- get customer_id and count of visits as count_no_trans
--- we need to get 
+-- we need to get the visits that did not have any transactions
 FROM Visits
 WHERE visit_id NOT IN (
 -- we need the visit_id of visits that did not have any transactions
@@ -9,3 +9,4 @@ WHERE visit_id NOT IN (
   -- check each visit_id in Transactions
 )
 GROUP BY customer_id
+-- group by customer_id to get the count of visits per customer
