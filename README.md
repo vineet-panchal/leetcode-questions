@@ -2,7 +2,7 @@
 
 ## Steps to Solve Leetcode Questions
 
-### ***1. Simplify The Problem***
+### **1. Simplify The Problem**
 
 - the first step is to simplify the problem
 - most leetcode questions have lots of fluff, that's hiding what actually matters
@@ -25,7 +25,7 @@
 
 <br />
 
-### ***2. Pattern Recognition***
+### **2. Pattern Recognition**
 
 - Now, that we know what we are solving, let's figure out how to solve it.
 
@@ -52,7 +52,7 @@
 
 <br />
 
-### 3. Implementation Step
+### **3. Implementation Step**
 
 - at this point, we have recognized what pattern to use.
 - all you need to do is put this pattern into action for this question
@@ -61,13 +61,13 @@
 
 <br />
 
-### ***4. Coding Time***
+### **4. Coding Time**
 
 - code the implementation plan
 
 <br />
 
-### ***5. Debug Time***
+### **5. Debug Time**
 
 - "My code ran perfectly and every tested passed" - said no programmer ever.
 - there are two types of errors: 
